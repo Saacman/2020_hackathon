@@ -1,0 +1,9 @@
+# pip install -U -r requirements.txt
+# To deploy your own bot is necessary to get twitter and WeatherBit.IO API Keys
+tweepy
+
+pyowm
+
+json
+
+requests
