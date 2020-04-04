@@ -15,7 +15,7 @@ def check_mentions(api, since_id):
         # Follow back
         if not tweet.user.following:
             tweet.user.follow()
-        api.update_with_media('mtshasta.jpg',f"{tweet.user.name} Hi!", in_reply_to_status_id=tweet.id)
+        api.update_with_media('mtshasta.jpg',f"{tweet.user.name} Hi!", in_reply_to_status_id=tweet.id, auto_populate_reply_metadata=True)
     return new_since_id
 
 def post_weather(api):
