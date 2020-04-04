@@ -1,0 +1,13 @@
+# Important keys, sshh is a secret
+
+API_KEY = 'aXwAhkL3tUYwePb5exZhZvjdy'
+API_SECRET = 'tMKijh16ISYEz0Jrfb1XnrSXqWwTe6Bsdqf1G5HUWrxjHAdYtJ'
+ACCESS_KEY = '1246514937364533248-IYCY0FcgMLaPHy7mhSEO3XEa7eyeEJ'
+ACCESS_SECRET = '2PY4hTEwRvnSVe0utbkTgtIPqrQlcnkGggDJc4rtWdcLp'
+
+# Forecast io keys and location
+WEATHERBIT_IO_KEY ='d17138f55fe84549a726c3a8ab47c155'
+LATITUDE = 41.409196
+LONGITUDE = -122.194888
+
+OW_KEY = 'f538288dcdb1c6f8c633e58271bd15fa'

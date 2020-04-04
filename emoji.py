@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+Clouds = u'\U00002601'
+Clear = u'\U00002600'
+Rain =  u'\U00002614'
+Snow = u'\U00002744'
+Thunderstorm = u'\U000026A1'
+Mist = u'\U0001F32B'
+Haze = u'\U0001F324'
+notsure = u'\U0001F648'
+degree_sign = u'\N{DEGREE SIGN}'
