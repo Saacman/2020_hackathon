@@ -15,10 +15,11 @@ def check_mentions(api, since_id):
         # Follow back
         if not tweet.user.following:
             tweet.user.follow()
-        api.update_with_media('mtshasta.jpg',f"{tweet.user.name} Hi!", in_reply_to_status_id=tweet.id, auto_populate_reply_metadata=True)
+        var = get_weather()
+        api.update_with_media('mtshasta.jpg',f"{tweet.user.name} Hi!. {var}", in_reply_to_status_id=tweet.id, auto_populate_reply_metadata=True)
     return new_since_id
 
-def post_weather(api):
+def get_weather():
     url = f"https://api.weatherbit.io/v2.0/current?key={WEATHERBIT_IO_KEY}&lat={LATITUDE}&lon={LONGITUDE}&units=I"
     data = requests.get(url).json()
     data = data['data'][0]
@@ -46,6 +47,10 @@ def post_weather(api):
         emoji = notsure
 
     tweet = f"It's {temp}{degree_sign}F, feeling like {app_temp}{degree_sign}F. {description} {emoji}"
+    return tweet
+
+def post_weather(api):
+    tweet = get_weather()
     try:
         api.update_status(status=tweet)
     except tweepy.TweepError as error:
